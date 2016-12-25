@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', 'TOKEN');
+define('BOT_TOKEN', '312487383:AAE6KUYTEaHU3I_9d9YG3Ff9kFchHg_Kt28');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 238773538;
+    $admin = 36960550;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
